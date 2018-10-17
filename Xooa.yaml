@@ -1,0 +1,7 @@
+Apps:
+  SmartContract:
+    Name: SimpleContract
+      Description: Solidity Smart Contract
+        path: /
+          language: solidity
+            README: https://github.com/rajatxooa/simpleContract/blob/master/README.md
