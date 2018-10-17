@@ -1,7 +1,7 @@
 Apps:
   SimpleContract:
     Name: SimpleContract
-      Description: Solidity Smart Contract
-        path: /contract
-          language: solidity
-            README: https://github.com/rajatxooa/simpleContract/blob/master/README.md
+    Description: Solidity Smart Contract
+    path: /contract
+    language: solidity
+    README: https://github.com/rajatxooa/simpleContract/blob/master/README.md
