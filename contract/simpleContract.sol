@@ -3,17 +3,17 @@ pragma solidity ^0.4.0;
 contract SimpleContract{
 
     string h = "hello";
-    mapping (string => string) arguments;
+    string data;
 
-    function get(string[] args) constant returns(string) {
-        return arguments[args[0]];
+    function get() public constant returns(string) {
+        return data;
     }
 
-    function set(string[] args) public {
-        arguments[args[0]] = args[1];
+    function set(string arg) public {
+        data = arg;
     }
 
-    function getHelloText() constant returns(string) {
+    function getHelloText() public constant returns(string) {
         return h;
     }
 }
