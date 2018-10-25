@@ -1,6 +1,6 @@
 pragma solidity ^0.4.0;
 
-import 'github.com/chrisdotn/jsmnSol/contracts/JsmnSolLib.sol';
+import './JsmnSolLib.sol';
 
 contract SimpleContract{
 
