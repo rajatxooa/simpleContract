@@ -1,5 +1,7 @@
 pragma solidity ^0.4.0;
 
+import './JsmnSolLib.sol';
+
 contract SimpleContract{
 
     string h = "hello";
@@ -9,7 +11,16 @@ contract SimpleContract{
         return data;
     }
 
-    function set(string arg) public {
+    // get array of arguments eg ["arg1", "arg2"]
+    function set(string args) public {
+        // parse args into json 
+        uint returnValue;
+        JsmnSolLib.Token[] memory tokens;
+        uint actualNum;
+        
+        (returnValue, tokens, actualNum) = JsmnSolLib.parse(args, 2); 
+        JsmnSolLib.Token memory argToken = tokens[1];
+        string memory arg = JsmnSolLib.getBytes(args, argToken.start, argToken.end);
         data = arg;
     }
 
